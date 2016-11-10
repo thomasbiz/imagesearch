@@ -76,6 +76,10 @@ app.get('/api/latest/imagesearch', function(req, res) {
     
 });
 
+app.get('/', function(req, res) {
+    res.sendFile('index.html', {root: __dirname + '/public'});
+})
+
 app.listen(process.env.PORT, function() {
     console.log('- Listening on port ' + process.env.PORT);
 });

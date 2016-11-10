@@ -1,0 +1,33 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Imagesearch micro service</title>
+        <!--Always force latest IE rendering engine (even in intranet) & Chrome Frame Remove this if you use the .htaccess-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1 class="header">FreeCodeCamp API Basejump: Imagesearch micro service</h1>
+            <blockquote>
+                <p>User stories:</p>
+                <ul>
+                    <li>I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li>
+                    <li>I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
+                    <li>I can get a list of the most recently submitted search strings.</li>
+                </ul>
+            </blockquote>
+            <h3>Example usage:</h3>
+            <code>https://thomasb-imagesarch.herokuapp.com/api/imagesarch/lol%20cats</code><br />
+            <code>https://thomasb-imagesarch.herokuapp.com/api/imagesarch/lol%20cats?offset=2</code>
+            <h3>Example output</h3>
+            <code>[{"url":"http://imgur.com/a/gr9LO","snippet":"Sarcastic, grumpy, lol cats","context":"https://imgur.com/user/DRSKILLLLZ"},{"url":"http://imgur.com/a/DRZaV","snippet":"My cats a modern family fan lol.","context":"https://imgur.com/user/crazycolaist"}, ...]</code>
+            <h3>Example usage:</h3>
+            <code>https://thomasb-imagesarch.herokuapp.com/api/latest/imagesarch</code>
+            <h3>Example output</h3>
+            <code>[{"term":"lol cats","when":"2016-11-10T10:16:17.604Z"},{"term":"getcat","when":"2016-11-10T11:56:12.395Z"},{"term":"lol cats","when":"2016-11-10T11:56:36.830Z"}]</code>
+        </div>
+    </body>
+</html>
